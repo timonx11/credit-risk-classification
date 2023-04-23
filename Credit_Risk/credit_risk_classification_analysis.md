@@ -13,15 +13,15 @@ We'll classiying it to 2 category which are Healthy loans (low-risk) categorized
 * This shows us that the model will predict loan status's as healthy better than being able to predict loan status's as non-healthy. 
 * This could be beacause of the dataset is not balanced, meaning that most of the data belongs to one category (in this case, the data shows that the healthy loans greatly outweighed non-healthy loans). 
 
-* This can be seen (on the code) by using the <b>"value_counts function"</b>, we are able to see that the data is highly imbalanced. Marked by the number of healthy loans `0` and non-healthy loans `1`
+* This can be seen (on the code) by using the <b>"value_counts function"</b>, we are able to see that the data is highly imbalanced. Marked by the number of healthy loans `0` , 75036 entry and non-healthy loans `1` , 2500 entry
 
-* And to strenghten that analysis, we can also see on the confusion matrix:
+* And to strenghten that analysis, we can also see on the confusion matrix code that:
    * Out of the 18,759 loan status's that are healthy (low-risk), the model predicted 18,679 as healthy correctly (True Positive) and 80 as healthy incorrectly (False Positive).
    * Out of the 625 loan status's that are non-healthy (high-risk), the model predicted 558 as non-healthy correctly (True Negative) and 67 as non-healthy incorrectly (False Negative).
 
 * Based on above results, To generate a higher accuracy score and see how the model handles non healthy loans (high-risk), we can oversample the data using the RandomOverSampler module from the imblearn library, which will adds more copies of the non-healthy loans (minority) to obtain a balanced dataset.
 
-* After resampled the training data, I created another Logistic Regression Model to fit with the oversampled data, And that generated an accuracy score of 100%, which turns out to be higher than the model fitted with the non balance data. The oversampled model performs better due to the dataset being balanced. The non-healthy (high-risk) loans recall value increased from 0.89 to 1 indicating that the model does an exceptional job identifying non-healthy (high-risk) loans as well as healthy (low-risk). 
+* After resampled the training data, I created another Logistic Regression Model to fit with the oversampled data, And that generated an accuracy score of 100%, which turns out to be higher than the model fitted with the non balance / original data. The oversampled model performs better due to the dataset being balanced. The non-healthy (high-risk) loans recall value increased from 0.89 to 1 indicating that the model does much better job in identifying non-healthy (high-risk) loans as well as healthy (low-risk). 
 
 * Confusion matrix on the oversampled data as below:
    * Out of the 18,759 loan status's that are healthy (low-risk), the model predicted 18,668 as healthy correctly (True Positive) and 91 as healthy incorrectly (False Positive).
