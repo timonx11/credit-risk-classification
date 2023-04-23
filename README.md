@@ -1,6 +1,6 @@
 # Credit-risk-classification
 ## Tim N - Module 20 Challenge
-### PLEASE NOTE: ALL CODE AND ANALYSIS REPORT ARE STORED ON THE "credit-risk-classification" Folder. "credit_risk_classification.ipynb" for the code and "credit_risk_classification_analysist" for the Written Analysis.
+### PLEASE NOTE: ALL CODE AND ANALYSIS REPORT ARE STORED ON THE "credit-risk-classification" Folder. "credit_risk_classification.ipynb" for the code and "credit_risk_classification_analysis" for the Written Analysis.
 
 ## Background
 In this Challenge, you’ll use various techniques to train and evaluate a model based on loan risk. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
